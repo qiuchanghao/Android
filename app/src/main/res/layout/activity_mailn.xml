@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_mailn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#696969"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:id="@+id/toAddEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="接收方的邮箱地址"
+        android:text="1477363342@qq.com"
+        android:theme="@style/MyEditText" />
+
+    <EditText
+        android:id="@+id/etubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入主题" />
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入邮件内容"
+        android:theme="@style/MyEditText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="sendFileMail"
+        android:text="点击发送带附件邮件" />
+</LinearLayout>
